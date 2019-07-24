@@ -1,0 +1,148 @@
+$base-font-size: 130; // Is used as a %
+$line-height: 1.5;
+$ratio: 1.5;
+
+$base: 16 * ($base-font-size / 100);
+$leading: $base * $line-height;
+
+@mixin line-height($number) {
+  line-height: #{$number * $line-height + "rem"};
+}
+
+@mixin margin-top($number) {
+  margin-top: #{$number * $line-height + "rem"};
+}
+
+@mixin margin-bottom($number) {
+  margin-bottom: #{$number * $line-height + "rem"};
+}
+
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  }
+
+  @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return $value;
+}
+
+@function modular-scale($value, $ms-ratio: $ratio) {
+  $size: pow($ms-ratio, $value);
+
+  @return #{$size + "rem"};
+}
+
+html {
+  font-kerning: normal;
+  font-size: #{$base-font-size + "%"};
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+article {
+  max-width: 33em;
+  margin: 0 auto; // center content
+}
+
+p {
+  margin: 0 auto;
+}
+
+p + p {
+  text-indent: 1em;
+}
+
+blockquote p {
+  hanging-punctuation: first;
+}
+
+// Headings Parameters
+// (font-size, line-height, margin-top, margin-bottom)
+$headings: (
+  h1: (
+    2,
+    2,
+    3,
+    1
+  ),
+  h2: (
+    1,
+    1.5,
+    2,
+    1
+  ),
+  h3: (
+    0,
+    1.5,
+    1,
+    0
+  ),
+  h4: (
+    0,
+    1,
+    1,
+    0
+  ),
+  h5: (
+    0,
+    1,
+    1,
+    0
+  ),
+  h6: (
+    0,
+    1,
+    1,
+    0
+  )
+);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.04em;
+
+  @include margin-bottom(2);
+}
+
+h1 {
+  font-size: modular-scale(3);
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  max-width: 50em;
+}
+
+@each $heading, $properties in $headings {
+  #{$heading} {
+    font-size: modular-scale(nth($properties, 1));
+
+    @include line-height(nth($properties, 2));
+    @include margin-top(nth($properties, 3));
+    @include margin-bottom(nth($properties, 4));
+  }
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style-position: outside;
+}
+
+small,
+figcaption {
+  font-size: modular-scale(-1);
+}

@@ -1,0 +1,20 @@
+a {
+  &:link {
+    color: inherit;
+    text-decoration: underline #0D9;
+  }
+
+  &:visited {
+    color: inherit;
+    text-decoration: underline #0D9;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: inherit;
+    background-color: #0D9;
+  }
+
+  &:active { color: #ccc; }
+}
