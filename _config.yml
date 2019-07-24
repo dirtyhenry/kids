@@ -12,3 +12,9 @@ theme: kids
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - kids.gemspec
+  - Makefile
