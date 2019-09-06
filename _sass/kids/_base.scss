@@ -1,5 +1,22 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+html {
+  font-family: -apple-system, sans-serif;
+}
+
+body {
+  // Remove the default margin in browsers
+  margin: 0;
+}
+
+#site-title {
+  color: #0D9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: white;
+    background-color: #0D9;
+  }
 }

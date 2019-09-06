@@ -1,3 +1,10 @@
+body {
+  // Make sure body takes all the available vertical space
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -6,7 +13,55 @@ header {
 
   nav {
     ul {
-      list-style-type:none;
+      list-style-type: none;
     }
+  }
+
+  padding: 1em 1em 2em 1em;
+}
+
+main {
+  display: block;
+  // Take all the extra vertical space if any.
+  flex: 1;
+  // Use as much horizontal space as possible and centered.
+  max-width: 50em;
+  width: 100%;
+  margin: 0 auto;
+
+  // Don't let the 100% width overflow on narrower devices.
+  box-sizing: border-box;
+  padding: 0 1em;
+
+  .post-list {
+    list-style-type: none;
+    padding: 0;
+
+    article {
+      display: flex;
+      flex-flow: column nowrap;
+
+      .title-wrapper {
+        display: flex;
+        align-items: baseline;
+
+        h3 {
+          padding: 0;
+          margin: 0;
+        }
+
+        > * + * {
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 2em 1em 1em 1em;
+  ul {
+    list-style-type: none;
+    padding: 0;
   }
 }

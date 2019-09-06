@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Welcome to Kids"
+---
+
+Kids is a Jekyll theme I wrote to have a decent theme base for all my Jekyll sites — which I have way too many of.
+
+## My objectives for Kids
+
+I want Kids to be a theme that:
+
+* is minimal in features and scaffolding;
+* has a small footprint;
+* uses modern tools;
+* is accessible;
+* is readable with good typography.
+
+## Why Kids?
+
+As a tribute to _Stranger Things_, because [_Kids_][kids-song] is a great theme.
+
+[kids-song]: https://song.link/fr/i/1142771421
