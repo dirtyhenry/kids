@@ -33,7 +33,7 @@ layout: default
     </ul>
 
     {%- if site.posts.size > site.kids.home_posts -%}
-    <a href="{{ 'archives.html' | relative_url }}">
+    <a href="{{ site.kids.archives_path | default: 'archives.html' | relative_url }}">
       Older posts
     </a>
     {%- endif -%}
