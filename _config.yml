@@ -8,6 +8,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: /kids
+header_pages:
+  - about.md
+  - header.md
+footer_pages:
+  - footer.md
 
 show_excerpts: true
 
