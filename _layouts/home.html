@@ -7,12 +7,10 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
-
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in site.posts limit:site.kids.home_posts -%}
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <li>
         <article>
@@ -26,16 +24,21 @@ layout: default
           </div>
           <div>
             {%- if site.show_excerpts -%}
-              {{ post.excerpt }}
+              {{ post.excerpt | markdownify }}
             {%- endif -%}
             </div>
         </article>
-
-
-
       </li>
       {%- endfor -%}
     </ul>
+
+    {%- if site.posts.size > site.kids.home_posts -%}
+    <a href="{{ 'archives.html' | relative_url }}">
+      Older posts
+    </a>
+    {%- endif -%}
+
+    {{ content }}
 
     <p class="feed-subscribe">
       <a href="{{ 'feed.xml' | relative_url }}">

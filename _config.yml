@@ -1,5 +1,7 @@
 title: "Kids: a Jekyll theme"
-author: dirtyhenry
+repository:
+  url: https://github.com/dirtyhenry/kids
+  name: dirtyhenry/kids
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -8,6 +10,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: /kids
 
 show_excerpts: true
+
+kids:
+  # The maximal number of posts featured on the home
+  home_posts: 5
 
 # Build settings
 theme: kids
