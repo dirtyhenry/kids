@@ -60,6 +60,10 @@ main {
     list-style-type: none;
     padding: 0;
 
+    li {
+      margin-bottom: 2em;
+    }
+
     article {
       display: flex;
       flex-flow: column nowrap;

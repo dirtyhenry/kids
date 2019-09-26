@@ -11,6 +11,10 @@ baseurl: /kids
 
 show_excerpts: true
 
+kids:
+  # The maximal number of posts featured on the home
+  home_posts: 5
+
 # Build settings
 theme: kids
 
