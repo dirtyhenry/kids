@@ -7,13 +7,36 @@ body {
 
 header {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+
+  @media screen and (max-width: 767px) {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    overflow-x: hidden;
+  }
 
   nav {
     ul {
       list-style-type: none;
+      padding: 0;
+
+      // Show the list items horizontally
+      // with some spacing inbetween
+      list-style: none;
+      li {
+        display: inline-block;
+        margin: 0 0.8rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 
