@@ -12,6 +12,8 @@ baseurl: /kids
 show_excerpts: true
 
 kids:
+  # The path to the page using the archives template
+  archives_path: 'archives.html'
   # The maximal number of posts featured on the home
   home_posts: 5
 
