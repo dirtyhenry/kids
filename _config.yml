@@ -15,10 +15,11 @@ footer_pages:
   - footer.md
 
 show_excerpts: true
+markdown: CommonMark
 
 kids:
   # The path to the page using the archives template
-  archives_path: 'archives.html'
+  archives_path: "archives.html"
   # The maximal number of posts featured on the home
   home_posts: 5
 
@@ -26,8 +27,8 @@ kids:
 theme: kids
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
