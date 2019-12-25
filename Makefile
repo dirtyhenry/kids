@@ -1,3 +1,6 @@
+clean:
+	rm -rf _site .sass-cache
+
 install:
 	bundle install
 
