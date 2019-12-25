@@ -1,14 +1,10 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-$accent-color: #0D9;
+$text-color: #333;
+$accent-color: #0d9;
 $accent-inverted: #fff;
 $accent-inverted-active: #ccc;
 
 // Import partials.
-@import
-  "kids/base",
-  "kids/layout",
-  "kids/links",
-  "kids/typography"
-;
+@import "kids/base", "kids/layout", "kids/links", "kids/typography";

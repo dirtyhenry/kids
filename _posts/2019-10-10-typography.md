@@ -6,8 +6,6 @@ excerpt: "A CommonMark rendering sample."
 
 Text CC-BY-SA 4.0 from https://github.com/commonmark/commonmark.js/blob/master/test/spec.txt
 
-# Introduction
-
 ## What is Markdown?
 
 Markdown is a plain text format for writing structured documents,

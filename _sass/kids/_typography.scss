@@ -1,4 +1,68 @@
-p {
-  font-size: 1rem;
-  line-height: 1.45;
+html {
+  color: $text-color;
+  font-family: "Inter", -apple-system, sans-serif;
+  font-size: 100%;
+  line-height: 1.42;
+
+  @media (min-width: 1024px) {
+    font-size: 137.5%; // 22 px
+  }
+}
+
+main {
+  max-width: 42em;
+  hyphens: auto;
+
+  p {
+    margin: 0 auto;
+  }
+
+  p + p {
+    text-indent: 1em;
+  }
+
+  blockquote p {
+    hanging-punctuation: first;
+  }
+
+  li + li {
+    margin-top: 0.5em;
+  }
+
+  @media (min-width: 1024px) {
+    ul,
+    ol {
+      padding-left: 0;
+      list-style-position: outside;
+    }
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 200%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 150%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 125%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+footer {
+  font-size: 68.75%;
 }
