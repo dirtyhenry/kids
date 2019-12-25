@@ -1,19 +1,25 @@
 a {
   &:link {
     color: inherit;
-    text-decoration: underline $accent-color;
+    text-decoration-color: $accent-color;
+    text-decoration-line: underline;
+    text-underline-position: under;
   }
 
   &:visited {
     color: inherit;
-    text-decoration: underline $accent-color;
+    text-decoration-color: $accent-color;
+    text-decoration-line: underline;
   }
 
   &:hover,
   &:focus {
     outline: 0;
-    color: inherit;
+    color: $accent-inverted;
     background-color: $accent-color;
+    padding: 8px;
+    margin: -8px;
+    transform: rotate(45deg);
   }
 
   &:active { color: $accent-inverted-active; }
