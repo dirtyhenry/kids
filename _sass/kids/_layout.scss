@@ -48,7 +48,6 @@ main {
   // Take all the extra vertical space if any.
   flex: 1;
   // Use as much horizontal space as possible and centered.
-  max-width: 50em;
   width: 100%;
   margin: 0 auto;
 
@@ -91,7 +90,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  
+
   ul {
     list-style-type: none;
     padding: 0;

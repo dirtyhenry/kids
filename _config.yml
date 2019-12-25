@@ -12,6 +12,7 @@ header_pages:
   - about.md
   - header.md
 footer_pages:
+  - archives.md
   - footer.md
 
 show_excerpts: true
