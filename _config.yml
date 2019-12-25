@@ -18,10 +18,14 @@ show_excerpts: true
 markdown: CommonMark
 
 kids:
+  # A boolean indicating if the site contains a `site.webmanifest` file
+  apple_touch_icon: false
   # The path to the page using the archives template
   archives_path: "archives.html"
   # The maximal number of posts featured on the home
   home_posts: 5
+  # A boolean indicating if the site contains a `site.webmanifest` file
+  webmanifest: false
 
 # Build settings
 theme: kids
