@@ -1,5 +1,6 @@
 ---
 layout: page
+nav_title: Special Header
 title: Header
 permalink: /header/
 ---
