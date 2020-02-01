@@ -13,6 +13,10 @@ main {
   max-width: 42em;
   hyphens: auto;
 
+  .post-header {
+    margin-bottom: 1em;
+  }
+
   p {
     margin: 0 auto;
   }
