@@ -18,6 +18,7 @@ footer_pages:
 
 show_excerpts: true
 markdown: CommonMark
+permalink: /:title/
 
 kids:
   # A boolean indicating if the site contains a `site.webmanifest` file
