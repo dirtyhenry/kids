@@ -15,6 +15,10 @@ layout: default
       {%- endif -%}</p>
   </div>
 
+  {%- if page.cover -%}
+  {% asset '{{ page.cover }}' title='{{ page.cover_alt }}' %}
+  {%- endif -%}
+
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
