@@ -20,6 +20,19 @@ show_excerpts: true
 markdown: CommonMark
 permalink: /:title/
 
+commonmark:
+  options:
+    # Use smart punctuation (curly quotes, etc.).
+    - SMART
+    # Parse footnotes.
+    - FOOTNOTES
+    # Allow raw HTML (required for jekyll-assets to work properly).
+    - UNSAFE
+  extensions:
+    - strikethrough
+    - autolink
+    - table
+
 kids:
   # A boolean indicating if the site contains a `site.webmanifest` file
   apple_touch_icon: false
