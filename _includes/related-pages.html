@@ -1,0 +1,26 @@
+<div id="related-pages">
+  {%- if page.previous -%}
+  {%- assign previous = page.previous -%}
+  <div id="related-page-previous">
+    <p class="related-page-heading">{{ previousTitle }}</p>
+    <p class="related-page-title">
+      <a href="{{ previous.url | relative_url }}">
+        {{ previous.title }}
+      </a>
+    </p>
+    <p class="related-page-date">{{ previous.date | date: date_format }}</p>
+  </div>
+  {%- endif -%}
+  {%- if page.next -%}
+  {%- assign next = page.next -%}
+  <div id="related-page-next">
+    <p class="related-page-heading">Next</p>
+    <p class="related-page-title">
+      <a href="{{ next.url | relative_url }}">
+        {{ next.title }}
+      </a>
+    </p>
+    <p class="related-page-date">{{ next.date | date: date_format }}</p>
+  </div>
+  {%- endif -%}
+</div>
