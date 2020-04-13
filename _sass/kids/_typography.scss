@@ -21,8 +21,10 @@ main {
     margin: 0 auto;
   }
 
-  p + p {
-    text-indent: 1em;
+  .post-content {
+    p + p {
+      text-indent: 1em;
+    }
   }
 
   img,
