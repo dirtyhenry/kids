@@ -34,7 +34,7 @@ commonmark:
     - table
 
 kids:
-  # A boolean indicating if the site contains a `site.webmanifest` file
+  # A boolean indicating if the site contains an Apple touch icon file
   apple_touch_icon: false
   # The path to the page using the archives template
   archives_path: "archives.html"
