@@ -2,10 +2,11 @@
 
 // Define defaults for each variable.
 $text-color: #333;
-$accent-color: #0d9;
+$text-color-subdued: #666;
+$accent-color: #16d;
 $accent-inverted: #fff;
 $accent-inverted-active: #ccc;
 
 // Import partials.
-@import "kids/base", "kids/images", "kids/layout", "kids/links",
+@import "kids/base", "kids/images", "kids/index", "kids/layout", "kids/links",
   "kids/related_pages", "kids/typography";

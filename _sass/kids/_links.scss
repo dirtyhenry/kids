@@ -3,14 +3,14 @@ $button-border: darken($accent-color, 8%);
 a {
   &:not(.button) {
     &:link {
-      color: inherit;
+      color: $accent-color;
       text-decoration-color: $accent-color;
       text-decoration-line: underline;
       text-underline-position: under;
     }
 
     &:visited {
-      color: inherit;
+      color: $accent-color;
       text-decoration-color: $accent-color;
       text-decoration-line: underline;
     }

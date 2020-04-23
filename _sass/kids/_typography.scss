@@ -14,7 +14,11 @@ main {
   hyphens: auto;
 
   .post-header {
-    margin-bottom: 1em;
+    margin-bottom: 2rem;
+  }
+
+  .post-meta {
+    color: $text-color-subdued;
   }
 
   p {
@@ -52,15 +56,18 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+.post-list-item > .post-link {
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 h1 {
-  font-size: 200%;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  // No margin-top since this is the top of the page and we want only 1 per page.
+  // No margin-bottom as metadata should follow.
 }
 
 h2 {
@@ -69,8 +76,12 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-h3 {
+h3,
+.post-list-item > .post-link {
   font-size: 125%;
+}
+
+h3 {
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
