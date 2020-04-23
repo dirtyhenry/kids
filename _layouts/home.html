@@ -11,18 +11,15 @@ layout: default
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts limit:site.kids.home_posts -%}
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <li>
-        <article>
-          <div class="title-wrapper">
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
+        <article class="post-list-item">
+          <div class="post-link">
+            <a href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
-          </h3>
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
           </div>
-          <div>
+          <div class="post-meta">{{ post.date | i18n_date: 'default', site.lang }}</div>
+          <div class="post-excerpt">
             {%- if site.show_excerpts -%}
               {{ post.excerpt | markdownify }}
             {%- endif -%}
