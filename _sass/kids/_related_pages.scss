@@ -1,9 +1,12 @@
-$related-pages-heading: #6b6b6b;
-$related-pages-border: #ccc;
-
 #related-pages {
-  border-top: 1px solid $related-pages-border;
-  border-bottom: 1px solid $related-pages-border;
+  border-top: 1px solid $accent-inverted-active;
+  border-bottom: 1px solid $accent-inverted-active;
+
+  @media (prefers-color-scheme: dark) {
+    border-top: 1px solid $accent-inverted-active-dark;
+    border-bottom: 1px solid $accent-inverted-active-dark;
+  }
+
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -37,7 +40,10 @@ $related-pages-border: #ccc;
   justify-content: flex-start;
 
   @media screen and (min-width: 768px) {
-    border-right: 1px solid $related-pages-border;
+    border-right: 1px solid $accent-inverted-active;
+    @media (prefers-color-scheme: dark) {
+      border-right: 1px solid $accent-inverted-active-dark;
+    }
     padding-right: 1rem;
   }
 
@@ -70,7 +76,11 @@ $related-pages-border: #ccc;
 }
 
 .related-page-heading {
-  color: $related-pages-heading;
+  color: $text-color-subdued;
+  @media (prefers-color-scheme: dark) {
+    color: $text-color-subdued-dark;
+  }
+
   font-weight: 600;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -84,6 +94,9 @@ $related-pages-border: #ccc;
 }
 
 .related-page-date {
-  color: $related-pages-heading;
+  color: $text-color-subdued;
+  @media (prefers-color-scheme: dark) {
+    color: $text-color-subdued-dark;
+  }
   font-size: 0.85rem;
 }
