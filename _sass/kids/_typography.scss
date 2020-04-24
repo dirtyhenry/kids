@@ -1,5 +1,12 @@
 html {
+  background-color: $background-color;
   color: $text-color;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  }
+
   font-family: "Inter", -apple-system, sans-serif;
   font-size: 100%;
   line-height: 1.42;
@@ -19,6 +26,9 @@ main {
 
   .post-meta {
     color: $text-color-subdued;
+    @media (prefers-color-scheme: dark) {
+      color: $text-color-subdued-dark;
+    }
   }
 
   p {
