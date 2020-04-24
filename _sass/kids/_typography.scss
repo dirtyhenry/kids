@@ -39,6 +39,16 @@ main {
     p + p {
       text-indent: 1em;
     }
+
+    blockquote {
+      margin: 0;
+      padding: 0 1em;
+      border-left: 4px solid $accent-color;
+
+      p:last-child {
+        text-indent: 0;
+      }
+    }
   }
 
   p ~ div,
@@ -51,8 +61,8 @@ main {
     hanging-punctuation: first;
   }
 
-  li + li {
-    margin-top: 0.5em;
+  li > ul {
+    padding-left: 2rem;
   }
 
   @media (min-width: 1024px) {
