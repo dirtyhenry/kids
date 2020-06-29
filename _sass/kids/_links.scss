@@ -12,8 +12,8 @@ a {
         text-decoration-color: $accent-color-dark;
       }
 
-      text-decoration-line: underline;
-      text-underline-position: under;
+      text-decoration-thickness: 0.06em;
+      text-underline-offset: 0.06em;
     }
 
     &:visited {
