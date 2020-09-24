@@ -2,7 +2,9 @@
 layout: post
 title: "Typography"
 excerpt: "A CommonMark rendering sample."
-author: "Mick F"
+authors:
+  - "Mick F"
+  - "Mick G"
 ---
 
 A leading paragraph.
@@ -33,3 +35,10 @@ This is a list:
 > This is a quote
 >
 > — Whoever said it
+
+Another paragraph.
+
+> This is another quote.  
+> — Whoever said it
+
+And a closing paragraph.

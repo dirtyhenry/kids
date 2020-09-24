@@ -29,6 +29,21 @@ main {
     @media (prefers-color-scheme: dark) {
       color: $text-color-subdued-dark;
     }
+
+    ul.authors-list {
+      margin: 0;
+      list-style-type: none;
+      display: inline-block;
+      li {
+        display: inline-block;
+
+        &:not(:first-child) {
+          &::before {
+            content: ", ";
+          }
+        }
+      }
+    }
   }
 
   p {
@@ -41,7 +56,7 @@ main {
     }
 
     blockquote {
-      margin: 0;
+      margin: 1em 0;
       padding: 0 1em;
       border-left: 4px solid $accent-color;
 
@@ -52,6 +67,7 @@ main {
   }
 
   p ~ div,
+  .buckygem-youtube-tag,
   img,
   video {
     padding: 1em 0;
