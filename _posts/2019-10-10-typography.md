@@ -35,3 +35,10 @@ This is a list:
 > This is a quote
 >
 > — Whoever said it
+
+Another paragraph.
+
+> This is another quote.  
+> — Whoever said it
+
+And a closing paragraph.
