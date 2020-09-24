@@ -5,13 +5,27 @@ layout: default
 
   <div class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+    <div class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | i18n_date: 'default', site.lang }}
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
-      {%- endif -%}</p>
+      {%- elsif page.authors -%}
+        •
+          <ul class="authors-list">
+          {%- for author in page.authors -%}
+            <li>
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">
+                {{ author | escape }}
+              </span>
+            </span>
+            </li>
+          {%- endfor -%}
+          </ul>
+      {%- endif -%}
+      </div>
   </div>
 
   {%- if page.cover -%}

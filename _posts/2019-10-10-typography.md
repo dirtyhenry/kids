@@ -2,7 +2,9 @@
 layout: post
 title: "Typography"
 excerpt: "A CommonMark rendering sample."
-author: "Mick F"
+authors:
+  - "Mick F"
+  - "Mick G"
 ---
 
 A leading paragraph.

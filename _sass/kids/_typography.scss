@@ -29,6 +29,21 @@ main {
     @media (prefers-color-scheme: dark) {
       color: $text-color-subdued-dark;
     }
+
+    ul.authors-list {
+      margin: 0;
+      list-style-type: none;
+      display: inline-block;
+      li {
+        display: inline-block;
+
+        &:not(:first-child) {
+          &::before {
+            content: ", ";
+          }
+        }
+      }
+    }
   }
 
   p {
