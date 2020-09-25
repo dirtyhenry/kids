@@ -64,6 +64,14 @@ main {
         text-indent: 0;
       }
     }
+
+    @media (min-width: 1024px) {
+      & > ul,
+      & > ol {
+        padding-left: 0;
+        list-style-position: outside;
+      }
+    }
   }
 
   p ~ div,
@@ -79,14 +87,6 @@ main {
 
   li > ul {
     padding-left: 2rem;
-  }
-
-  @media (min-width: 1024px) {
-    ul,
-    ol {
-      padding-left: 0;
-      list-style-position: outside;
-    }
   }
 }
 
