@@ -38,7 +38,12 @@ This is a list:
 
 Another paragraph.
 
-> This is another quote.  
+> This is another quote, with a list:
+>
+> 1. One
+> 2. Two
+> 3. Three
+>
 > — Whoever said it
 
 And a closing paragraph.
