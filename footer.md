@@ -4,10 +4,11 @@ title: Footer
 permalink: /footer/
 ---
 
-Each page can be featured in the footer navigation bar.
-To do so, edit `_config.yml` to include:
+Each page can be featured in the footer navigation bar. To do so, edit
+`_config.yml` to include:
 
 ```
-footer_pages:
-  - footer.md
+kids:
+  footer_pages:
+    - footer.md
 ```

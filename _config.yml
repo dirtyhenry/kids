@@ -10,12 +10,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   _config.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.
 baseurl: /kids
-header_pages:
-  - about.md
-  - header.md
-footer_pages:
-  - archives.md
-  - footer.md
 
 show_excerpts: true
 markdown: CommonMark
@@ -43,6 +37,12 @@ kids:
   home_posts: 5
   # A boolean indicating if the site contains a `site.webmanifest` file
   webmanifest: false
+  header_pages:
+    - about.md
+    - header.md
+  footer_pages:
+    - archives.md
+    - footer.md
 
 # Build settings
 theme: kids
