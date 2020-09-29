@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dirtyhenry/buckygem.git
-  revision: 7b3eb86fcd7c440027603489cee2b0fb3a16bbc4
+  revision: c4b2b76a4352aa032c8d3d0af1550f1fd6da813f
   branch: master
   specs:
     buckygem (0.6.0)
