@@ -43,6 +43,7 @@ kids:
   footer_pages:
     - archives.md
     - footer.md
+    - inspiration.md
 
 # Build settings
 theme: kids
