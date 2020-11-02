@@ -47,3 +47,5 @@ Another paragraph.
 > — Whoever said it
 
 And a closing paragraph.
+
+## A very long heading title that should span over multiple lines, at least on mobile
