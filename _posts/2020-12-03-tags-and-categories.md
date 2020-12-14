@@ -6,6 +6,7 @@ category: Features
 tags:
   - Tags
   - Categories
+  - Encyclopédie d'art
 ---
 
 Using tags & categories in the front-matter can help group your contents by
