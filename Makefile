@@ -9,3 +9,9 @@ build:
 
 run:
 	bundle exec jekyll serve
+
+lint:
+	bundle exec rubocop
+
+lintfix:
+	bundle exec rubocop -a

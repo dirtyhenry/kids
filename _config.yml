@@ -10,7 +10,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   _config.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.
 baseurl: /kids
-
 show_excerpts: true
 markdown: CommonMark
 permalink: /:title/
@@ -27,6 +26,14 @@ commonmark:
     - strikethrough
     - autolink
     - table
+
+jekyll-archives:
+  enabled: ["categories", "tags"]
+  layout: archive
+  slug_mode: latin
+  permalinks:
+    tag: "/tag/:name/"
+    category: "/category/:name/"
 
 kids:
   # A boolean indicating if the site contains an Apple touch icon file
@@ -49,6 +56,7 @@ kids:
 theme: kids
 
 plugins:
+  - jekyll-archives
   - jekyll-feed
   - jekyll-seo-tag
 
