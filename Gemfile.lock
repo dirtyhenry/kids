@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dirtyhenry/buckygem.git
-  revision: 8297c01e15c940f9a59731f35c41246c864fd6a7
+  revision: 9292db9510d084097a5ac8b0a5c82a0a16b139a1
   branch: main
   specs:
     buckygem (0.6.0)
@@ -71,7 +71,7 @@ GEM
     extras (0.3.0)
       forwardable-extended (~> 2.5)
     fastimage (2.2.0)
-    ffi (1.13.1)
+    ffi (1.14.1)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (1.8.5)
@@ -133,7 +133,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (2.0.0)
+    regexp_parser (2.0.1)
     rexml (3.2.4)
     rouge (3.26.0)
     rubocop (1.6.1)
