@@ -1,24 +1,25 @@
-@charset "utf-8";
+@charset "UTF-8";
 
-// Define defaults for each variable.
-$background-color: #fff;
-$text-color: #333;
+// Use https://sass-guidelin.es/ to organize Sass.
 
-$background-color-dark: #333;
-$text-color-dark: #fff;
+// 1. Configuration and helpers
+@import "kids/abstracts/variables";
 
-$text-color-subdued: #666;
-$text-color-subdued-dark: #aaa;
+// 2. Vendors
+@import "kids/vendors/normalize";
 
-$accent-color: #16d;
-$accent-color-dark: #5af;
+// 3. Base stuff
+@import "kids/base/images", "kids/base/links", "kids/base/typography";
 
-$accent-inverted: #fff;
-$accent-inverted-dark: #333;
+// 4. Layout-related sections
+@import "kids/layout/body", "kids/layout/header", "kids/layout/main",
+  "kids/layout/footer";
 
-$accent-inverted-active: #ccc;
-$accent-inverted-active-dark: #666;
+// 5. Components
+@import "kids/components/related_pages";
 
-// Import partials.
-@import "kids/base", "kids/images", "kids/index", "kids/layout", "kids/links",
-  "kids/related_pages", "kids/typography";
+// 6. Page-specific styles
+@import "kids/pages/index";
+
+// 7. Themes
+// @import "themes/default";
