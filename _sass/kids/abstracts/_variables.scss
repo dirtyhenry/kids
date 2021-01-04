@@ -1,4 +1,15 @@
-$background-color: #fff;
+/// HEADER
+$header-background-color: hsl(0, 100%, 95%);
+$header-border-color: hsl(0, 100%, 50%);
+$header-font-color: #333;
+
+/// MAIN
+$main-background-color: hsl(85, 100%, 95%);
+
+/// FOOTER
+$footer-background-color: hsl(170, 100%, 95%);
+$footer-border-color: hsl(170, 100%, 50%);
+
 $text-color: #333;
 
 $background-color-dark: #333;

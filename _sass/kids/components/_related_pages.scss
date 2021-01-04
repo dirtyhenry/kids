@@ -1,3 +1,31 @@
+.related-page-heading {
+  color: $text-color-subdued;
+
+  @media (prefers-color-scheme: dark) {
+    color: $text-color-subdued-dark;
+  }
+
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.related-page-title {
+  flex: 0 0 100%;
+  font-weight: 400;
+  padding: 0.1rem 0 0.1rem 0;
+  order: 3;
+}
+
+.related-page-date {
+  color: $text-color-subdued;
+  font-size: 0.85rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: $text-color-subdued-dark;
+  }
+}
+
 #related-pages {
   border-top: 1px solid $accent-inverted-active;
   border-bottom: 1px solid $accent-inverted-active;
@@ -41,9 +69,11 @@
 
   @media screen and (min-width: 768px) {
     border-right: 1px solid $accent-inverted-active;
+
     @media (prefers-color-scheme: dark) {
       border-right: 1px solid $accent-inverted-active-dark;
     }
+
     padding-right: 1rem;
   }
 
@@ -73,30 +103,4 @@
   .related-page-date {
     order: 1;
   }
-}
-
-.related-page-heading {
-  color: $text-color-subdued;
-  @media (prefers-color-scheme: dark) {
-    color: $text-color-subdued-dark;
-  }
-
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-}
-
-.related-page-title {
-  flex: 0 0 100%;
-  font-weight: 400;
-  padding: 0.1rem 0 0.1rem 0;
-  order: 3;
-}
-
-.related-page-date {
-  color: $text-color-subdued;
-  @media (prefers-color-scheme: dark) {
-    color: $text-color-subdued-dark;
-  }
-  font-size: 0.85rem;
 }

@@ -1,4 +1,11 @@
 .post-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 2em;
+  }
+
   .post-list-item {
     display: flex;
     flex-flow: row wrap;

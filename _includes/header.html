@@ -2,8 +2,10 @@
 {%- assign page_paths = site.kids.header_pages | default: default_paths -%}
 {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
-<header>  
-  <a id="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+<header class="header">
+  <nav class="header-nav">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </nav>
   {%- if titles_size > 0 -%}
   <nav>
     <ul>

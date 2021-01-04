@@ -3,7 +3,7 @@
 // Use https://sass-guidelin.es/ to organize Sass.
 
 // 1. Configuration and helpers
-@import "kids/abstracts/variables";
+@import "kids/abstracts/variables", "kids/abstracts/mixins";
 
 // 2. Vendors
 @import "kids/vendors/normalize";
@@ -16,7 +16,8 @@
   "kids/layout/footer";
 
 // 5. Components
-@import "kids/components/related_pages";
+@import "kids/components/header_navigation", "kids/components/footer_navigation",
+  "kids/components/related_pages";
 
 // 6. Page-specific styles
 @import "kids/pages/index";

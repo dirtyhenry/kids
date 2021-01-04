@@ -1,6 +1,8 @@
 body {
-  // Make sure body takes all the available vertical space
-  display: flex;
-  flex-flow: column nowrap;
-  min-height: 100vh;
+  // Make sure the layout takes all the available vertical space.
+  &.full-vertical {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+  }
 }

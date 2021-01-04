@@ -1,20 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="{{ page.lang | default: site.lang | default: "en" }}">
 {%- include head.html -%}
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
+<body class="full-vertical">
   {%- include header.html -%}
-
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </main>
-
+  {%- include content.html -%}
   {%- include footer.html -%}
-
 </body>
 </html>

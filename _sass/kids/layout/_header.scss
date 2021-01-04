@@ -1,64 +1,13 @@
 header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: baseline;
+  &.header {
+    background-color: $header-background-color;
+    border-bottom: 1px solid $header-border-color;
+    @include layoutDoNotStickToTheXEdge;
+  }
 
   @media screen and (max-width: 767px) {
     flex-flow: column nowrap;
     align-items: flex-start;
     overflow-x: hidden;
-  }
-
-  nav {
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-
-      // Show the list items horizontally
-      // with some spacing inbetween
-      list-style: none;
-      li {
-        font-size: 0.8rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        display: inline-block;
-        margin: 0 0.8rem;
-
-        &:first-child {
-          margin-left: 0;
-        }
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-
-  padding: 1em 1em 2em 1em;
-
-  #site-title {
-    color: $accent-color;
-    @media (prefers-color-scheme: dark) {
-      color: $accent-color-dark;
-    }
-
-    font-size: 1.25rem;
-    font-weight: bold;
-    letter-spacing: -1px;
-
-    &:hover,
-    &:focus {
-      outline: 0;
-      color: $accent-inverted;
-      background-color: $accent-color;
-
-      @media (prefers-color-scheme: dark) {
-        color: $accent-inverted-dark;
-        background-color: $accent-color-dark;
-      }
-    }
   }
 }

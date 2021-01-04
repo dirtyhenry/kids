@@ -1,5 +1,5 @@
 html {
-  background-color: $background-color;
+  background-color: $main-background-color;
   color: $text-color;
 
   @media (prefers-color-scheme: dark) {
@@ -9,16 +9,41 @@ html {
 
   font-family: "Inter", -apple-system, sans-serif;
   font-size: 100%;
-  line-height: 1.42;
 
-  @media (min-width: 1024px) {
-    font-size: 137.5%; // 22 px
-  }
+  // FIXME: move for prose
+  // line-height: 1.42;
+  // @media (min-width: 1024px) {
+  //   font-size: 137.5%; // 22 px
+  // }
 }
 
 main {
-  max-width: 42em;
   hyphens: auto;
+
+  ul.tags-list {
+    padding: 1rem 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: $text-color-subdued;
+
+    li {
+      a.tag-link {
+        color: $text-color-subdued;
+        text-decoration-color: $text-color-subdued;
+      }
+
+      display: inline-block;
+
+      &:not(:first-child) {
+        &::before {
+          content: ", ";
+        }
+      }
+    }
+  }
 
   .post-header {
     margin-bottom: 2rem;
@@ -26,6 +51,7 @@ main {
 
   .post-meta {
     color: $text-color-subdued;
+
     @media (prefers-color-scheme: dark) {
       color: $text-color-subdued-dark;
     }
@@ -36,6 +62,7 @@ main {
       margin: 0;
       list-style-type: none;
       display: inline-block;
+
       li {
         display: inline-block;
 
@@ -49,7 +76,11 @@ main {
   }
 
   p {
-    margin: 0 auto;
+    margin: 0;
+  }
+
+  blockquote p {
+    hanging-punctuation: first;
   }
 
   .post-content {
@@ -83,37 +114,8 @@ main {
     padding: 1em 0;
   }
 
-  blockquote p {
-    hanging-punctuation: first;
-  }
-
   li > ul {
     padding-left: 2rem;
-  }
-
-  ul.tags-list {
-    padding: 1rem 0;
-    margin: 0;
-    list-style-type: none;
-    display: inline-block;
-
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: $text-color-subdued;
-
-    li {
-      a.tag-link {
-        color: $text-color-subdued;
-        text-decoration-color: $text-color-subdued;
-      }
-      display: inline-block;
-
-      &:not(:first-child) {
-        &::before {
-          content: ", ";
-        }
-      }
-    }
   }
 }
 

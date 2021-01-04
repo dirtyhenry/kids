@@ -3,6 +3,7 @@ clean:
 
 install:
 	bundle install
+	yarn install
 
 build:
 	bundle exec jekyll build
@@ -12,6 +13,7 @@ run:
 
 lint:
 	bundle exec rubocop
+	yarn run stylelint "_sass/**/*.scss"
 
 lintfix:
 	bundle exec rubocop -a

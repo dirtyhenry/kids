@@ -1,21 +1,29 @@
-main {
-  display: block;
+.main {
+  background-color: $main-background-color;
   // Take all the extra vertical space if any.
   flex: 1;
-  // Use as much horizontal space as possible and centered.
-  width: 100%;
-  margin: 0 auto;
-
-  // Don't let the 100% width overflow on narrower devices.
-  box-sizing: border-box;
-  padding: 0 1em;
-
-  .post-list {
-    list-style-type: none;
-    padding: 0;
-
-    li {
-      margin-bottom: 2em;
-    }
-  }
 }
+
+// Grealy inspired by the full-bleed post by Josh W Comeau.
+// 📜 https://www.joshwcomeau.com/css/full-bleed/
+
+// .article {
+//   display: grid;
+//   width: 100%;
+//   grid-template-columns:
+//     1fr
+//     unquote("min(65ch, 100%)")
+//     1fr;
+// }
+
+// .article > * {
+//   grid-column: 2;
+//   box-sizing: border-box;
+//   padding: 0 1rem;
+// }
+
+// .full-bleed {
+//   width: 100%;
+//   grid-column: 1 / 4;
+//   padding: 0;
+// }

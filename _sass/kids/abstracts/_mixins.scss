@@ -1,0 +1,51 @@
+@mixin flexRowApart {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@mixin layoutDoNotStickToTheXEdge {
+  padding: 0 1rem;
+}
+
+@mixin linkMakeTouchAccessible {
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@mixin linkResetStyle {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin listMakeHorizontal {
+  @include listReset;
+
+  // Show list items horizontally.
+  & > li {
+    display: inline-block;
+  }
+
+  // Add some margins between items (but skip outter margins).
+  & > li {
+    margin: 0 1rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@mixin listReset {
+  // Reset browser stylesheet paddings & margins.
+  padding: 0;
+  margin: 0;
+  // Don't show a bullet.
+  list-style: none;
+}

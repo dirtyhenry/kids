@@ -45,6 +45,7 @@ a {
 
     &:active {
       color: $accent-inverted-active;
+
       @media (prefers-color-scheme: dark) {
         color: $accent-inverted-active-dark;
       }
@@ -55,7 +56,6 @@ a {
     -moz-appearance: none;
     -webkit-appearance: none;
     text-decoration: none;
-
     background-color: $accent-color;
     color: $accent-inverted;
     border: 1px solid $button-border;
@@ -75,11 +75,11 @@ a {
     padding: 0.5em 1em;
     position: relative;
     vertical-align: top;
-
     cursor: pointer;
 
     &:hover {
       background-color: $button-border;
+
       @media (prefers-color-scheme: dark) {
         background-color: $button-border-dark;
       }

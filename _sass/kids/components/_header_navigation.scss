@@ -1,0 +1,49 @@
+header {
+  &.header {
+    @include flexRowApart;
+    color: $header-font-color;
+  }
+
+  a {
+    @include linkResetStyle;
+    @include linkMakeTouchAccessible;
+  }
+
+  .site-title {
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      color: $accent-inverted;
+      background-color: $accent-color;
+
+      @media (prefers-color-scheme: dark) {
+        color: $accent-inverted-dark;
+        background-color: $accent-color-dark;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      @include listMakeHorizontal;
+
+      li {
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  #site-title {
+    color: $accent-color;
+
+    @media (prefers-color-scheme: dark) {
+      color: $accent-color-dark;
+    }
+
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
