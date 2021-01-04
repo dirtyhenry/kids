@@ -4,7 +4,7 @@
   <ul class="meta">
     <li>{{ site.title | escape }}</li>
     {%- if site.repository.url and site.repository.name -%}
-    <li><a href={{ site.repository.url }}>{{ site.repository.name }}</a></li>
+    <li><a href="{{ site.repository.url }}">{{ site.repository.name }}</a></li>
     {%- endif -%}
   </ul>
   {% if page_paths.size > 0 %}

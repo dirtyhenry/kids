@@ -1,4 +1,4 @@
-title: "Kids: a Jekyll theme"
+title: "Kids"
 lang: "en"
 repository:
   url: https://github.com/dirtyhenry/kids
@@ -6,9 +6,9 @@ repository:
 email: your-email@example.com
 port: 4001
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this line in
-  _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+  A theme for websites built with Jekyll. Kids aims to be minimal in features
+  and scaffolding, have a small footprint, use modern tools, be accessible and
+  readable with good typography.
 baseurl: /kids
 show_excerpts: true
 markdown: CommonMark
