@@ -1,7 +1,15 @@
 header {
   &.header {
+    color: $header-font-color;
     background-color: $header-background-color;
     border-bottom: 1px solid $header-border-color;
+
+    @media (prefers-color-scheme: dark) {
+      color: $header-font-color-dark;
+      background-color: $header-background-color-dark;
+      border-bottom: 1px solid $header-border-color-dark;
+    }
+
     @include layoutDoNotStickToTheXEdge;
   }
 

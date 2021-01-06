@@ -1,87 +1,89 @@
 $button-border: darken($accent-color, 8%);
 $button-border-dark: lighten($accent-color-dark, 8%);
 
-a {
-  &:not(.button) {
-    &:link {
-      color: $accent-color;
-      text-decoration-color: $accent-color;
+main {
+  a {
+    &:not(.button) {
+      &:link {
+        color: $accent-color;
+        text-decoration-color: $accent-color;
 
-      @media (prefers-color-scheme: dark) {
-        color: $accent-color-dark;
-        text-decoration-color: $accent-color-dark;
+        @media (prefers-color-scheme: dark) {
+          color: $accent-color-dark;
+          text-decoration-color: $accent-color-dark;
+        }
+
+        text-decoration-thickness: 0.06em;
+        text-underline-offset: 0.06em;
       }
 
-      text-decoration-thickness: 0.06em;
-      text-underline-offset: 0.06em;
-    }
+      &:visited {
+        color: $accent-color;
+        text-decoration-color: $accent-color;
 
-    &:visited {
-      color: $accent-color;
-      text-decoration-color: $accent-color;
+        @media (prefers-color-scheme: dark) {
+          color: $accent-color-dark;
+          text-decoration-color: $accent-color-dark;
+        }
 
-      @media (prefers-color-scheme: dark) {
-        color: $accent-color-dark;
-        text-decoration-color: $accent-color-dark;
+        text-decoration-line: underline;
       }
 
-      text-decoration-line: underline;
+      &:hover,
+      &:focus {
+        outline: 0;
+        color: $accent-inverted;
+        background-color: $accent-color;
+
+        @media (prefers-color-scheme: dark) {
+          color: $accent-inverted-dark;
+          background-color: $accent-color-dark;
+        }
+
+        padding: 8px;
+        margin: -8px;
+      }
+
+      &:active {
+        color: $accent-inverted-active;
+
+        @media (prefers-color-scheme: dark) {
+          color: $accent-inverted-active-dark;
+        }
+      }
     }
 
-    &:hover,
-    &:focus {
-      outline: 0;
-      color: $accent-inverted;
+    &.button {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      text-decoration: none;
       background-color: $accent-color;
+      color: $accent-inverted;
+      border: 1px solid $button-border;
 
       @media (prefers-color-scheme: dark) {
-        color: $accent-inverted-dark;
         background-color: $accent-color-dark;
+        color: $accent-inverted-dark;
+        border: 1px solid $button-border-dark;
       }
 
-      padding: 8px;
-      margin: -8px;
-    }
+      align-items: center;
+      border-radius: 4px;
+      box-shadow: none;
+      display: inline-flex;
+      font-size: inherit;
+      justify-content: center;
+      padding: 0.5em 1em;
+      position: relative;
+      vertical-align: top;
+      cursor: pointer;
 
-    &:active {
-      color: $accent-inverted-active;
+      &:hover {
+        background-color: $button-border;
 
-      @media (prefers-color-scheme: dark) {
-        color: $accent-inverted-active-dark;
-      }
-    }
-  }
-
-  &.button {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    text-decoration: none;
-    background-color: $accent-color;
-    color: $accent-inverted;
-    border: 1px solid $button-border;
-
-    @media (prefers-color-scheme: dark) {
-      background-color: $accent-color-dark;
-      color: $accent-inverted-dark;
-      border: 1px solid $button-border-dark;
-    }
-
-    align-items: center;
-    border-radius: 4px;
-    box-shadow: none;
-    display: inline-flex;
-    font-size: inherit;
-    justify-content: center;
-    padding: 0.5em 1em;
-    position: relative;
-    vertical-align: top;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $button-border;
-
-      @media (prefers-color-scheme: dark) {
-        background-color: $button-border-dark;
+        @media (prefers-color-scheme: dark) {
+          background-color: $button-border-dark;
+        }
       }
     }
   }

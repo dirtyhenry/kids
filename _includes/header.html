@@ -1,29 +1,41 @@
 {%- assign default_paths = site.pages | map: "path" -%}
 {%- assign page_paths = site.kids.header_pages | default: default_paths -%}
 {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+{%- assign logo = site.kids.logo | default: "kids-tent-logo.svg" -%}
 
 <header class="header">
-  <nav class="header-nav">
-    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-  </nav>
-  {%- if titles_size > 0 -%}
-  <nav>
-    <ul>
-      {%- for path in page_paths -%}
-        {%- assign my_page = site.pages | where: "path", path | first -%}
-        {%- if my_page.nav_title or my_page.title -%}
-        <li>
-          <a class="page-link" href="{{ my_page.url | relative_url }}">
-          {%- if my_page.nav_title -%}
-            {{ my_page.nav_title | escape }}
-          {%- elsif my_page.title -%}
-            {{ my_page.title | escape }}
+  <a class="site-title" href="{{ '/' | relative_url }}">
+    {% asset '{{ logo }}' %}
+    <span>{{ site.title }}</span>
+  </a>
+  <form class="searchform" action="https://duckduckgo.com/" method="GET" target="_blank">
+    <input type="hidden" name="sites" value="dirtyhenry.github.io">
+  	<input type="hidden" name="kj" value="#0091D9">
+    <input type="hidden" name="ky" value="#F7F7F7">
+    <input type="hidden" name="k9" value="#0293D7">
+    <input type="hidden" name="kaa" value="#8647B3">
+    <input type="hidden" name="kf" value="-1">
+	  <input type="search" name="q" required="required" placeholder="Chercher" autofocus="">
+	  <button type="submit" name="button">Search</button>
+  </form>
+    {% comment %} <ul>
+      <li></li>
+      {%- if titles_size > 0 -%}
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.nav_title or my_page.title -%}
+          <li>
+            <a href="{{ my_page.url | relative_url }}">
+            {%- if my_page.nav_title -%}
+              {{ my_page.nav_title | escape }}
+            {%- elsif my_page.title -%}
+              {{ my_page.title | escape }}
+            {%- endif -%}
+            </a>
+          </li>
           {%- endif -%}
-          </a>
-        </li>
-        {%- endif -%}
-      {%- endfor -%}
+        {%- endfor -%}
+      {%- endif -%}
     </ul>
-  </nav>
-  {%- endif -%}
+  </nav> {% endcomment %}
 </header>
