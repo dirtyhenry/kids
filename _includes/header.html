@@ -8,6 +8,25 @@
     {% asset '{{ logo }}' %}
     <span>{{ site.title }}</span>
   </a>
+  <nav>
+    {%- if titles_size > 0 -%}
+  <ul>
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.nav_title or my_page.title -%}
+        <li>
+          <a href="{{ my_page.url | relative_url }}">
+          {%- if my_page.nav_title -%}
+            {{ my_page.nav_title | escape }}
+          {%- elsif my_page.title -%}
+            {{ my_page.title | escape }}
+          {%- endif -%}
+          </a>
+        </li>
+        {%- endif -%}
+      {%- endfor -%}
+  </ul>
+    {%- endif -%}
   <form class="searchform" action="https://duckduckgo.com/" method="GET" target="_blank">
     <input type="hidden" name="sites" value="dirtyhenry.github.io">
   	<input type="hidden" name="kj" value="#0091D9">
@@ -18,24 +37,5 @@
 	  <input type="search" name="q" required="required" placeholder="Chercher" autofocus="">
 	  <button type="submit" name="button">Search</button>
   </form>
-    {% comment %} <ul>
-      <li></li>
-      {%- if titles_size > 0 -%}
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.nav_title or my_page.title -%}
-          <li>
-            <a href="{{ my_page.url | relative_url }}">
-            {%- if my_page.nav_title -%}
-              {{ my_page.nav_title | escape }}
-            {%- elsif my_page.title -%}
-              {{ my_page.title | escape }}
-            {%- endif -%}
-            </a>
-          </li>
-          {%- endif -%}
-        {%- endfor -%}
-      {%- endif -%}
-    </ul>
-  </nav> {% endcomment %}
+  </nav>
 </header>

@@ -1,6 +1,6 @@
 @mixin flexRowApart {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: space-between;
   align-items: baseline;
 }
@@ -23,14 +23,17 @@
 @mixin listMakeHorizontal {
   @include listReset;
 
+  display: flex;
+  flex: 1;
+
   // Show list items horizontally.
   & > li {
-    display: inline-block;
+    display: inline-flex;
   }
 
   // Add some margins between items (but skip outter margins).
   & > li {
-    margin: 0 1rem;
+    margin: 0 0.75rem;
 
     &:first-child {
       margin-left: 0;
