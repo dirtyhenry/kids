@@ -22,6 +22,7 @@ Here are some sites that are really inspired in their "simple but great" design.
 
 - [The Inter typeface family](https://rsms.me/inter/)
 - [Atkinson Hyperlegible Font](https://brailleinstitute.org/freefont)
+- [TT2020](https://ctrlcctrlv.github.io/TT2020/)
 
 ## Accessibility
 
