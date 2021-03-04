@@ -1,22 +1,4 @@
-body {
-  // Make sure body takes all the available vertical space
-  display: flex;
-  flex-flow: column nowrap;
-  min-height: 100vh;
-}
-
 header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: baseline;
-
-  @media screen and (max-width: 767px) {
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    overflow-x: hidden;
-  }
-
   nav {
     ul {
       list-style-type: none;
@@ -49,8 +31,6 @@ header {
 
 main {
   display: block;
-  // Take all the extra vertical space if any.
-  flex: 1;
   // Use as much horizontal space as possible and centered.
   width: 100%;
   margin: 0 auto;
@@ -70,12 +50,6 @@ main {
 }
 
 footer {
-  padding: 2em 1em 1em 1em;
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
   ul {
     list-style-type: none;
     padding: 0;
