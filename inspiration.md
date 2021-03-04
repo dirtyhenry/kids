@@ -16,6 +16,7 @@ Here are some sites that are really inspired in their "simple but great" design.
 - [koenwoortman.com](https://koenwoortman.com)
 - [1mb.club](https://1mb.club) is a _club_ of lightweight websites
 - [chirpy](https://chirpy.cotes.info/)
+- [dcurt.is](https://dcurt.is/)
 
 ## Typefaces
 
@@ -42,3 +43,10 @@ Here are some sites that are really inspired in their "simple but great" design.
 ## SVG Icons
 
 - https://www.visiwig.com/icons/
+
+## Tools
+
+- [Learn UI](https://learnui.design/) Design tools:
+  - [Data Visualization Color Picker](https://learnui.design/tools/data-color-picker.html)
+  - [Accessible Color Generator](https://learnui.design/tools/accessible-color-generator.html)
+  - [Gradient Generator](https://learnui.design/tools/gradient-generator.html)
