@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/kids/feed.xml" rel="self" type="application/atom+xml" /><link href="/kids/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-05-03T09:38:08+00:00</updated><id>/kids/feed.xml</id><title type="html">Kids</title><subtitle>A theme for websites built with Jekyll. Kids aims to be minimal in features and scaffolding, have a small footprint, use modern tools, be accessible and readable with good typography.</subtitle><entry><title type="html">Tags &amp;amp; Categories</title><link href="/kids/tags-and-categories/" rel="alternate" type="text/html" title="Tags &amp;amp; Categories" /><published>2020-12-03T00:00:00+00:00</published><updated>2020-12-03T00:00:00+00:00</updated><id>/kids/tags-and-categories</id><content type="html" xml:base="/kids/tags-and-categories/">&lt;p&gt;Using tags &amp;amp; categories in the front-matter can help group your contents by
+themes.&lt;/p&gt;
+&lt;p&gt;The categories (preferably 1 per post) will be featured in the post’s header,
+next to the date and the authors.&lt;/p&gt;
+&lt;p&gt;The tags will be featured at the bottom of the page.&lt;/p&gt;</content><author><name>Dirty Henry</name></author><category term="Features" /><category term="Tags" /><category term="Categories" /><category term="Encyclopédie d'art" /><summary type="html">Using tags &amp;amp; categories in the front-matter can help group your contents by themes.</summary></entry><entry><title type="html">Buttons</title><link href="/kids/buttons/" rel="alternate" type="text/html" title="Buttons" /><published>2020-04-22T00:00:00+00:00</published><updated>2020-04-22T00:00:00+00:00</updated><id>/kids/buttons</id><content type="html" xml:base="/kids/buttons/">&lt;p&gt;A button:&lt;/p&gt;
+&lt;div&gt;
+  &lt;a class=&quot;button&quot; href=&quot;https://deadrooster.org&quot;&gt;
+    Visit Dead Rooster
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The paragraph after.&lt;/p&gt;</content><author><name></name></author><category term="Tags" /><summary type="html">Examples of Kids' buttons support.</summary></entry><entry><title type="html">Images</title><link href="/kids/images/" rel="alternate" type="text/html" title="Images" /><published>2020-04-05T00:00:00+00:00</published><updated>2020-04-05T00:00:00+00:00</updated><id>/kids/images</id><content type="html" xml:base="/kids/images/">&lt;div class=&quot;buckygem-youtube-tag&quot;&gt;
+  &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+    &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/Ha2OcL_0gtM?rel=0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Bla bli blou&lt;/p&gt;
+&lt;h2&gt;Images&lt;/h2&gt;
+&lt;p&gt;A parapraph before the image.&lt;/p&gt;
+&lt;img src=&quot;/kids/assets/keith-misner-h0Vxgz5tyXA-unsplash-7f881aa260733c9ddebae76b9a25def7fb1ed8d147370fb98ae196b8993910d0193a175f218ed0b2fea0a68b3dcfdd956459b317d320932ee1b94d7d9d3de354.jpg&quot;&gt;
+&lt;p&gt;A parapraph after the image.&lt;/p&gt;
+&lt;h2&gt;Videos&lt;/h2&gt;
+&lt;p&gt;A paragraph before the 1st video.&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;/kids/assets/dumb-dumber-gagging-19d841195c07eed6f7f75e43c898fe1a731132edd08d13dc61e0c6dab2eb6e0e02c53b96ce52a6784e72929473c43e6383c68444eb06b4c783eef02fa9875fbd.mp4&quot; controls=&quot;true&quot; controlList=&quot;nodownload&quot;&gt;No support for video.&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;A paragraph after the video.&lt;/p&gt;
+&lt;h2&gt;Embeds&lt;/h2&gt;
+&lt;p&gt;Kids support the following liquid tags:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;youtube video_id
+dailymotion video_id
+vimeo video_id
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;YouTube&lt;/h3&gt;
+&lt;p&gt;A paragraph before the 1st video.&lt;/p&gt;
+&lt;div class=&quot;buckygem-youtube-tag&quot;&gt;
+  &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+    &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/Ha2OcL_0gtM?rel=0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A paragraph after the video.&lt;/p&gt;
+&lt;h3&gt;Dailymotion&lt;/h3&gt;
+&lt;p&gt;A paragraph before the 1st video.&lt;/p&gt;
+&lt;div class=&quot;buckygem-dailymotion-tag&quot;&gt;
+  &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+    &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.dailymotion.com/embed/video/x7whp9t&quot; allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A paragraph after the video.&lt;/p&gt;
+&lt;h3&gt;Vimeo&lt;/h3&gt;
+&lt;p&gt;A paragraph before the 1st video.&lt;/p&gt;
+&lt;div class=&quot;buckygem-vimeo-tag&quot;&gt;
+  &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+    &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://player.vimeo.com/video/45646253&quot; allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A paragraph after the video.&lt;/p&gt;</content><author><name></name></author><category term="Tags" /><summary type="html">Examples of Kids' image support.</summary></entry><entry><title type="html">Typography</title><link href="/kids/typography/" rel="alternate" type="text/html" title="Typography" /><published>2019-10-10T00:00:00+00:00</published><updated>2019-10-10T00:00:00+00:00</updated><id>/kids/typography</id><content type="html" xml:base="/kids/typography/">&lt;p&gt;A leading paragraph.&lt;/p&gt;
+&lt;h2&gt;H2 Title&lt;/h2&gt;
+&lt;h3&gt;H3 Title&lt;/h3&gt;
+&lt;h4&gt;H4 Title&lt;/h4&gt;
+&lt;p&gt;Another paragraph about things, so that we can have a text long enough to
+overflow a single line.&lt;/p&gt;
+&lt;p&gt;The following paragraph will be indented a little to improve readability.&lt;/p&gt;
+&lt;h2&gt;A list&lt;/h2&gt;
+&lt;p&gt;This is a list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First item of the list;&lt;/li&gt;
+&lt;li&gt;Second item of the list;
+&lt;ul&gt;
+&lt;li&gt;A sublist;&lt;/li&gt;
+&lt;li&gt;Another item of the sublist;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Third item of the list;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;A quote&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a quote&lt;/p&gt;
+&lt;p&gt;— Whoever said it&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Another paragraph.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is another quote, with a list:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;One&lt;/li&gt;
+&lt;li&gt;Two&lt;/li&gt;
+&lt;li&gt;Three&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;— Whoever said it&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And a closing paragraph.&lt;/p&gt;
+&lt;h2&gt;A very long heading title that should span over multiple lines, at least on mobile&lt;/h2&gt;</content><author><name>Mick F</name></author><summary type="html">A CommonMark rendering sample.</summary></entry><entry><title type="html">Welcome to Kids</title><link href="/kids/welcome/" rel="alternate" type="text/html" title="Welcome to Kids" /><published>2019-09-06T00:00:00+00:00</published><updated>2019-09-06T00:00:00+00:00</updated><id>/kids/welcome</id><content type="html" xml:base="/kids/welcome/">&lt;p&gt;Kids is a Jekyll theme I wrote to have a decent theme base for all my Jekyll
+sites — which I have way too many of.&lt;/p&gt;
+&lt;h2&gt;My objectives for Kids&lt;/h2&gt;
+&lt;p&gt;I want Kids to be a theme that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;is minimal in features and scaffolding;&lt;/li&gt;
+&lt;li&gt;has a small footprint;&lt;/li&gt;
+&lt;li&gt;uses modern tools;&lt;/li&gt;
+&lt;li&gt;is accessible;&lt;/li&gt;
+&lt;li&gt;is readable with good typography.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Why Kids?&lt;/h2&gt;
+&lt;p&gt;As a tribute to &lt;em&gt;Stranger Things&lt;/em&gt;, because &lt;a href=&quot;https://song.link/fr/i/1142771421&quot;&gt;&lt;em&gt;Kids&lt;/em&gt;&lt;/a&gt; is a great theme.&lt;/p&gt;</content><author><name></name></author><category term="Tags" /><summary type="html">Kids is a Jekyll theme I wrote to have a decent theme base for all my Jekyll sites — which I have way too many of.</summary></entry></feed>
