@@ -17,6 +17,7 @@ Here are some sites that are really inspired in their "simple but great" design.
 - [1mb.club](https://1mb.club) is a _club_ of lightweight websites
 - [chirpy](https://chirpy.cotes.info/)
 - [dcurt.is](https://dcurt.is/)
+- [dermah.org](https://dermah.org)
 
 ## Typefaces
 
