@@ -18,6 +18,7 @@ Here are some sites that are really inspired in their "simple but great" design.
 - [chirpy](https://chirpy.cotes.info/)
 - [dcurt.is](https://dcurt.is/)
 - [dermah.org](https://dermah.org)
+- [brittanychiang.com](https://brittanychiang.com)
 
 ## Typefaces
 
