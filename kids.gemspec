@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
 
-  spec.required_ruby_version = '>= 2.6'
+  spec.required_ruby_version = '>= 2.7'
 
   spec.add_runtime_dependency 'buckygem', '~> 0.5'
   spec.add_runtime_dependency 'jekyll', '>= 4.0', '< 5.0'
@@ -28,4 +28,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rubocop', '~> 1.6'
+  spec.metadata = {
+    'rubygems_mfa_required' => 'true'
+  }
 end

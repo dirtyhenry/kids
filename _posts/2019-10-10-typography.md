@@ -18,7 +18,7 @@ A leading paragraph.
 Another paragraph about things, so that we can have a text long enough to
 overflow a single line.
 
-The following paragraph will be indented a little to improve readability.
+The following paragraph will be separated a little to improve readability.
 
 ## A list
 
