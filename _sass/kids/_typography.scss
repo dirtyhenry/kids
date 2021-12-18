@@ -48,13 +48,9 @@ main {
     }
   }
 
-  p {
-    margin: 0 auto;
-  }
-
   .post-content {
     p + p {
-      text-indent: 1em;
+      margin-top: 1rem;
     }
 
     blockquote {
