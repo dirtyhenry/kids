@@ -9,6 +9,10 @@ group :jekyll_plugins do
       git: 'https://github.com/jekyll/jekyll-archives.git',
       branch: 'master'
 
+  gem 'jekyll-commonmark',
+      git: 'https://github.com/jekyll/jekyll-commonmark.git',
+      branch: 'master'
+
   gem 'buckygem',
       git: 'https://github.com/dirtyhenry/buckygem.git',
       branch: 'main'
