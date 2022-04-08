@@ -25,7 +25,7 @@ layout: default
           {%- endfor -%}
         </ul>
       {%- endif -%}
-      {%- if page.categories -%}
+      {%- if page.categories.size > 0 -%}
         <span> • </span>
         <ul class="categories-list">
           {%- for category in page.categories -%}

@@ -37,11 +37,11 @@ GIT
 
 GIT
   remote: https://github.com/jekyll/jekyll-commonmark.git
-  revision: 26a431595c15b0b27e3c9e85c2d3c1e83526010d
+  revision: bcac00e555097a1ca737d9d6f837d9a4feaa1ef4
   branch: master
   specs:
     jekyll-commonmark (1.4.0)
-      commonmarker (~> 0.22)
+      commonmarker (~> 0.23.4)
 
 PATH
   remote: .
@@ -127,7 +127,7 @@ GEM
     nokogiri (1.13.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    parallel (1.22.0)
+    parallel (1.22.1)
     parser (3.1.1.0)
       ast (~> 2.4.1)
     pathutil (0.16.2)
@@ -142,7 +142,7 @@ GEM
     regexp_parser (2.2.1)
     rexml (3.2.5)
     rouge (3.28.0)
-    rubocop (1.26.1)
+    rubocop (1.27.0)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)

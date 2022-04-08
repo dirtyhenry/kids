@@ -48,4 +48,8 @@ Another paragraph.
 
 And a closing paragraph.
 
+---
+
+And another paragraph.
+
 ## A very long heading title that should span over multiple lines, at least on mobile
