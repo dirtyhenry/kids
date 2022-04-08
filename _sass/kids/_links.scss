@@ -30,14 +30,7 @@ a {
 
     &:hover,
     &:focus {
-      outline: 0;
-      color: $accent-inverted;
-      background-color: $accent-color;
-
-      @media (prefers-color-scheme: dark) {
-        color: $accent-inverted-dark;
-        background-color: $accent-color-dark;
-      }
+      text-decoration-line: none;
     }
 
     &:active {

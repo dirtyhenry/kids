@@ -49,42 +49,29 @@ main {
   }
 
   .post-content {
-    p + p {
-      margin-top: 1rem;
+    p {
+      margin-top: .75rem;
+      margin-bottom: .75rem;
     }
 
     blockquote {
-      margin: 1em 0;
-      padding: 0 1em;
+      margin: 1rem 0;
+      padding: 0 1rem;
       border-left: 4px solid $accent-color;
 
       p:last-child {
         text-indent: 0;
       }
     }
-
-    @media (min-width: 1024px) {
-      & > ul,
-      & > ol {
-        padding-left: 0;
-        list-style-position: outside;
-      }
-    }
   }
 
-  p ~ div,
   .buckygem-youtube-tag,
-  img,
-  video {
-    padding: 1em 0;
+  img {
+    margin: 1em 0;
   }
 
   blockquote p {
     hanging-punctuation: first;
-  }
-
-  li > ul {
-    padding-left: 2rem;
   }
 
   ul.tags-list {
@@ -132,8 +119,8 @@ h1 {
 
 h2 {
   font-size: 150%;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-top: 2rem;
+  margin-bottom: 1.1rem;
 }
 
 h3,
@@ -142,10 +129,21 @@ h3,
 }
 
 h3 {
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-top: 1.1rem;
+  margin-bottom: 0.75rem;
 }
 
 footer {
   font-size: 68.75%;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+// Add some margin for lists, but not for *nested* lists.
+* + ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
