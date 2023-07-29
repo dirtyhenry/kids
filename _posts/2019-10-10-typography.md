@@ -1,7 +1,8 @@
 ---
-layout: post
+id: cdd8f411-3842-4220-9c5f-578044d30ed6
+url: https://dirtyhenry.github.io/kids/typography/
 title: "Typography"
-excerpt: "A CommonMark rendering sample."
+summary: "A CommonMark rendering sample."
 authors:
   - "Mick F"
   - "Mick G"
