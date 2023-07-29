@@ -1,7 +1,7 @@
 ---
-layout: post
+id: fbce3382-9be7-48dc-8387-dcc21e72e13a
+url: https://dirtyhenry.github.io/kids/tags-and-categories/
 title: Tags & Categories
-author: Dirty Henry
 category: Features
 tags:
   - Tags

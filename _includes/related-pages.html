@@ -12,6 +12,16 @@
     </p>
     <p class="related-page-date">{{ previous.date | i18n_date: 'default', locale }}</p>
   </div>
+  {%- else -%}
+  {%- assign first = site.posts.first -%}
+  <div id="related-page-previous">
+    <p class="related-page-title">
+      <a href="{{ first.url | relative_url }}">
+        {{ first.title }}
+      </a>
+    </p>
+    <p class="related-page-date">{{ 'common.firstPage' | translate: locale }}</p>
+  </div>
   {%- endif -%}
   {%- if page.next -%}
   {%- assign next = page.next -%}
@@ -23,6 +33,15 @@
       </a>
     </p>
     <p class="related-page-date">{{ next.date | i18n_date: 'default', locale }}</p>
+  </div>
+  {%- else -%}
+  <div id="related-page-next">
+    <p class="related-page-title">
+      <a href="{{ 'feed.xml' | relative_url }}">
+        {{ 'common.subscribe' | translate: locale }}
+      </a>
+    </p>
+    <p class="related-page-date">{{ 'common.lastPage' | translate: locale }}</p>
   </div>
   {%- endif -%}
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{%- assign locale = site.lang | 'en' -%}
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -30,7 +30,7 @@ layout: default
 
     <p class="feed-subscribe">
       <a href="{{ 'feed.xml' | relative_url }}">
-        <span>Subscribe to our feed</span>
+        <span>{{ 'common.subscribe' | translate: locale }}</span>
       </a>
     </p>
   {%- endif -%}

@@ -1,5 +1,5 @@
 title: "Kids"
-lang: "en"
+lang: "fr"
 repository:
   url: https://github.com/dirtyhenry/kids
   name: dirtyhenry/kids
@@ -10,9 +10,16 @@ description: >- # this means to ignore newlines until "baseurl:"
   and scaffolding, have a small footprint, use modern tools, be accessible and
   readable with good typography.
 baseurl: /kids
-show_excerpts: true
+show_summary: true
 markdown: CommonMark
 permalink: /:title/
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      authors: "Dirty Henry"
 
 commonmark:
   options:

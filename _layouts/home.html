@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{%- assign locale = site.lang | 'en' -%}
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -19,9 +19,9 @@ layout: default
             </a>
           </div>
           <div class="post-meta">{{ post.date | i18n_date: 'default', site.lang }}</div>
-          <div class="post-excerpt">
-            {%- if site.show_excerpts -%}
-              {{ post.excerpt | markdownify }}
+          <div class="post-summary">
+            {%- if site.show_summary -%}
+              {{ post.summary | markdownify }}
             {%- endif -%}
             </div>
         </article>
@@ -39,7 +39,7 @@ layout: default
 
     <p class="feed-subscribe">
       <a href="{{ 'feed.xml' | relative_url }}">
-        <span>Subscribe to our feed</span>
+        <span>{{ 'common.subscribe' | translate: locale }}</span>
       </a>
     </p>
   {%- endif -%}
