@@ -46,7 +46,7 @@ kids:
   # A boolean indicating if the site contains an Apple touch icon file
   apple_touch_icon: false
   # The path to the page using the archives template
-  archives_path: "archives.html"
+  archives_path: "archives/"
   # The maximal number of posts featured on the home
   home_posts: 5
   # A boolean indicating if the site contains a `site.webmanifest` file
