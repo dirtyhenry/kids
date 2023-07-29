@@ -7,6 +7,7 @@ en:
     subscribe: Subscribe to the RSS feed.
     next: next
     previous: previous
+    morePosts: Older posts
   date:
     abbr_day_names:
       - Sun
