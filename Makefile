@@ -1,17 +1,11 @@
-clean:
-	rm -rf _site .sass-cache
+install: # Install dependencies
+	npm install
 
-install:
-	bundle install
+run: # Run the Vite dev server
+	npm run dev 
 
-build:
-	bundle exec jekyll build
+build: # Build the app for production
+	npm run build
 
-run:
-	bundle exec jekyll serve
-
-lint:
-	bundle exec rubocop
-
-lintfix:
-	bundle exec rubocop -a
+run-build: build # Run the app in production mode
+	npm start

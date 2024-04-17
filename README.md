@@ -1,30 +1,48 @@
 # Kids
 
-Kids is a Jekyll theme.
+Kids contains the tooling to run my websites, which mainly consists of
+transforming Markdown pages into webpages, with a little styling and plumbing on
+the way.
 
-## Installation
+> [!WARNING]  
+> This repository used to be a Jekyll theme but not anymore. If you intend to
+> use this as a Jekyll theme, please use the `last-ruby-jekyll-version` tag, as
+> in:
+>
+> ```
+> gem 'kids', :git => 'https://github.com/dirtyhenry/kids.git', :tag => 'last-ruby-jekyll-version'
+> ```
 
-To use the Kids theme:
+## Development
 
-1. Add the following to your site's `Gemfile`:
+Run the Vite dev server:
 
-   ```ruby
-   gem "kids", git: "https://github.com/dirtyhenry/kids.git", branch: 'main'
-   ```
+```shellscript
+npm run dev
+```
 
-1. Add the following to your site's `_config.yml`:
+## Deployment
 
-   ```yml
-   theme: kids
-   ```
+First, build your app for production:
 
-## Contributing
+```sh
+npm run build
+```
 
-Pull requests are welcome. For major changes, please open an issue first to
-discuss what you would like to change.
+Then run the app in production mode:
 
-Please make sure to update tests as appropriate.
+```sh
+npm start
+```
 
-## License
+Now you'll need to pick a host to deploy it to.
 
-[MIT](https://choosealicense.com/licenses/mit/)
+### DIY
+
+If you're familiar with deploying Node applications, the built-in Remix app
+server is production-ready.
+
+Make sure to deploy the output of `npm run build`
+
+- `build/server`
+- `build/client`
