@@ -8,7 +8,9 @@
     border-top: 1px solid $accent-inverted-active-dark;
     border-bottom: 1px solid $accent-inverted-active-dark;
   }
+}
 
+#related-pages {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -82,7 +84,9 @@
   @media (prefers-color-scheme: dark) {
     color: $text-color-subdued-dark;
   }
+}
 
+.related-page-heading {
   font-weight: 600;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -96,9 +100,9 @@
 }
 
 .related-page-date {
+  font-size: 0.85rem;
   color: $text-color-subdued;
   @media (prefers-color-scheme: dark) {
     color: $text-color-subdued-dark;
   }
-  font-size: 0.85rem;
 }
