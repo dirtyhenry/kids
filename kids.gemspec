@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
 
-  spec.required_ruby_version = '>= 2.7'
+  spec.required_ruby_version = '>= 3.4'
 
   spec.add_runtime_dependency 'buckygem', '~> 0.5'
   spec.add_runtime_dependency 'jekyll', '>= 4.0', '< 5.0'
