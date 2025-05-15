@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 $button-border: darken($accent-color, 8%);
 $button-border-dark: lighten($accent-color-dark, 8%);
 
