@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 // Remove all default margin
 * {
   margin: 0;
@@ -5,13 +7,13 @@
 
 #site-title {
   color: $accent-color;
-  @media (prefers-color-scheme: dark) {
-    color: $accent-color-dark;
-  }
-
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: -1px;
+
+  @media (prefers-color-scheme: dark) {
+    color: $accent-color-dark;
+  }
 
   &:hover,
   &:focus {

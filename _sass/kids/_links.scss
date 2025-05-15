@@ -1,9 +1,15 @@
-$button-border: darken($accent-color, 8%);
-$button-border-dark: lighten($accent-color-dark, 8%);
+@use "../variables" as *;
+@use "sass:color";
+
+$button-border: color.adjust($accent-color, $lightness: -8%);
+$button-border-dark: color.adjust($accent-color-dark, $lightness: 8%);
 
 a {
   &:not(.button) {
     &:link {
+      text-decoration-thickness: 0.06em;
+      text-underline-offset: 0.06em;
+
       color: $accent-color;
       text-decoration-color: $accent-color;
 
@@ -11,12 +17,11 @@ a {
         color: $accent-color-dark;
         text-decoration-color: $accent-color-dark;
       }
-
-      text-decoration-thickness: 0.06em;
-      text-underline-offset: 0.06em;
     }
 
     &:visited {
+      text-decoration-line: underline;
+
       color: $accent-color;
       text-decoration-color: $accent-color;
 
@@ -24,8 +29,6 @@ a {
         color: $accent-color-dark;
         text-decoration-color: $accent-color-dark;
       }
-
-      text-decoration-line: underline;
     }
 
     &:hover,
@@ -42,6 +45,7 @@ a {
   }
 
   &.button {
+    appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
     text-decoration: none;
@@ -49,12 +53,6 @@ a {
     background-color: $accent-color;
     color: $accent-inverted;
     border: 1px solid $button-border;
-
-    @media (prefers-color-scheme: dark) {
-      background-color: $accent-color-dark;
-      color: $accent-inverted-dark;
-      border: 1px solid $button-border-dark;
-    }
 
     align-items: center;
     border-radius: 4px;
@@ -67,6 +65,12 @@ a {
     vertical-align: top;
 
     cursor: pointer;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $accent-color-dark;
+      color: $accent-inverted-dark;
+      border: 1px solid $button-border-dark;
+    }
 
     &:hover {
       background-color: $button-border;

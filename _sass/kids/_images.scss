@@ -1,3 +1,8 @@
+@use "sass:math";
+@use "sass:map";
+
+@use "../variables" as *;
+
 img {
   display: block;
   max-width: 100%;
@@ -60,7 +65,9 @@ $embed-responsive-aspect-ratios: (
 @each $key, $ratio in $embed-responsive-aspect-ratios {
   .embed-responsive-#{$key} {
     &::before {
-      padding-top: percentage(map-get($ratio, y) / map-get($ratio, x));
+      padding-top: math.percentage(
+        math.div(map.get($ratio, y), map.get($ratio, x))
+      );
     }
   }
 }
